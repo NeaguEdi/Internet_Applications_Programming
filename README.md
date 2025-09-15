@@ -4,4 +4,4 @@ The website was built using a combination of **web technologies**:
    * **HTML**, used to structure the content, including article layouts, navigation menu, and header.
    * **CSS**, used for styling, ensuring a clean and modern design with a responsive layout that adapts to different screen sizes.
    * **JavaScript**, integrated to add interactive elements, such as dynamic content loading, form validation, and user interface animations.
-   * **PHP** was utilized for backend development, handling server-side logic such as managing article data, user authentication, and interactions with a database. This allowed for a fully functional content management      system.
+   * **PHP**, utilized for backend development, handling server-side logic such as managing article data, user authentication, and interactions with a database.
