@@ -1,4 +1,4 @@
-This project, titled Internet Application Programming, is a dynamic sports article website developed as a final project for a course. The main goal was to create a functional and interactive web platform for publishing and viewing articles related to various sports.
+This project, titled #Internet Applications Programming#, is a dynamic sports article website developed as a final project for a course. The main goal was to create a functional and interactive web platform for publishing and viewing articles related to various sports.
 
 The website was built using a combination of foundational web technologies:
    * HTML was used to structure the content, including article layouts, navigation menu, and header.
