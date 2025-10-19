@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-type" value="text/html" charset="UTF-8" />
+    <meta name="description" content="Papuci Abibas">
+    <meta name="author" content="co-authored by Neagu Eduard, Schiopu Cristian">
+    <title>Articole sportive</title>
+    <link rel="icon" type="image/x-icon" href="poze/icon.png">
+    <link rel="stylesheet" type="text/css" href="macheta.css" title="Foaie de stiluri">
+    <script type="text/javascript" src="slider.js"></script>
+    <script type="text/javascript" src="cosDeCumparaturi.js"></script>
+</head>
+
+<body>
+    <h1 id="Titlul_paginii">Covor pentru Yoga</h1>
+    <nav class="navigator">
+        <a class="item_navigator" href="index.html">Acasă</a>
+        <a class="item_navigator" href="articoleSportive.html">Articole sportive</a>
+        <div class="item_navigator has-dropdown">
+            <a class="menu-button">Îmbrăcăminte</a>
+            <div class="dropdown">
+                <div class="submenu">
+                    <a href="#">Bărbați</a>
+                    <div class="sub-dropdown">
+                        <a href="tricouriBarbati.html">Tricouri</a>
+                        <a href="pantaloniBarbati.html">Pantaloni</a>
+                        <a href="papuciBarbati.html">Papuci</a>
+                    </div>
+                </div>
+                <div class="submenu">
+                    <a href="#">Femei</a>
+                    <div class="sub-dropdown">
+                        <a href="tricouriFemei.html">Tricouri</a>
+                        <a href="pantaloniFemei.html">Pantaloni</a>
+                        <a href="papuciFemei.html">Papuci</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="item_navigator" href="inregistrare_user.html">Înregistrează-te</a>
+        <a class="item_navigator" href="login.html">Login</a>
+        <a class="item_navigator" href="contact.html">Contact</a>
+        <a class="item_navigator" href="cosDeCumparaturi.html">🛒Coș</a>
+    </nav>
+    <div style="text-align: center;">
+        <h2>Galerie de Imagini</h2>
+        <div class="gallery">
+            <img src="poze/covorYoga1.JPG" onclick="showBigImage(this)">
+            <img src="poze/covorYoga2.JPG" onclick="showBigImage(this)">
+            <img src="poze/covorYoga3.JPG" onclick="showBigImage(this)">
+            <img src="poze/covorYoga4.JPG" onclick="showBigImage(this)">
+        </div>
+
+        <div class="big-image-container">
+            <img id="bigImg" class="big-image" src="poze/covorYoga1.JPG">
+        </div>
+        <div class="control">
+            <button onclick="prev()">Înapoi</button>
+            <button onclick="slide()">Înainte</button>
+        </div>
+        <h2>PRET: 44,99 LEI
+            <br>CULOARE:<select name="culoare">
+                <option value="R">Roz</option>
+                <option value="N">Negru</option>
+                <option value="A">Albastru</option>
+                <option value="V">Verde</option>
+            </select>
+            <br><button onclick="adaugaInCos('Covor yoga', 44.99)">Adaugă în coș</button><br>
+        </h2>
+        <section>
+            <h2>Descriere</h2>
+            <p class="description">Acest covoraș pentru yoga este alegerea perfectă pentru practicile tale zilnice.
+                Construit pentru a oferi un suport excelent și confort, acesta este disponibil într-o varietate de
+                culori și dimensiuni, pentru a se potrivi stilului și preferințelor tale. Fabricat din materiale de
+                înaltă calitate, covorașul îți va oferi stabilitate și confort, indiferent de tipul de exercițiu pe care
+                îl practici.</p>
+        </section>
+
+        <section class="features">
+            <h2>Caracteristici principale:</h2>
+            <ul style="list-style-type: none">
+                <li><strong>Material:</strong> PVC ecologic, rezistent și ușor de curățat, fără substanțe toxice.</li>
+                <li><strong>Culori:</strong> Disponibil în nuanțe variate: roz, negru, albastru, verde. (mai multe
+                    culori disponibile in viitor)</li>
+                <li><strong>Dimensiuni:</strong> Lungime standard de 183 cm și lățime de 61 cm, ideal pentru orice tip
+                    de practică.</li>
+                <li><strong>Grosime:</strong> 6 mm, pentru un echilibru perfect între confort și stabilitate.</li>
+                <li><strong>Anti-alunecare:</strong> Suprafața covorașului este texturată pentru a preveni alunecarea în
+                    timpul exercițiilor.</li>
+                <li><strong>Ușor de transportat:</strong> Covorașul se rulează ușor și este prevăzut cu o curea de
+                    transport inclusă.</li>
+            </ul>
+        </section>
+    </div>
+
+</body>
+
+</html>

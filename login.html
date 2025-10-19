@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-type" value="text/html" charset="UTF-8" />
+    <meta name="description" content="Pagina de articole sportive">
+    <meta name="author" content="co-authored by Neagu Eduard, Schiopu Cristian">
+    <title>Articole sportive</title>
+    <link rel="icon" type="image/x-icon" href="poze/icon.png">
+    <link rel="stylesheet" type="text/css" href="macheta.css" title="Foaie de stiluri">
+    <!-- <script type="text/javascript" src="login.js"></script> -->
+</head>
+
+<body id="main_body">
+    <h1 id="Titlul_paginii">Login</h1>
+    <nav class="navigator">
+        <a class="item_navigator" href="index.html">Acasă</a>
+        <a class="item_navigator" href="articoleSportive.html">Articole sportive</a>
+        <div class="item_navigator has-dropdown">
+            <a class="menu-button">Îmbrăcăminte</a>
+            <div class="dropdown">
+                <div class="submenu">
+                    <a href="#">Bărbați</a>
+                    <div class="sub-dropdown">
+                        <a href="tricouriBarbati.html">Tricouri</a>
+                        <a href="pantaloniBarbati.html">Pantaloni</a>
+                        <a href="papuciBarbati.html">Papuci</a>
+                    </div>
+                </div>
+                <div class="submenu">
+                    <a href="#">Femei</a>
+                    <div class="sub-dropdown">
+                        <a href="tricouriFemei.html">Tricouri</a>
+                        <a href="pantaloniFemei.html">Pantaloni</a>
+                        <a href="papuciFemei.html">Papuci</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="item_navigator" href="inregistrare_user.html">Înregistrează-te</a>
+        <a class="activ" href="login.html">Login</a>
+        <a class="item_navigator" href="contact.html">Contact</a>
+        <a class="item_navigator" href="cosDeCumparaturi.html">🛒Coș</a>
+    </nav>
+    <div class="main_div">
+        <form action="login_user.php" method="POST">
+            <div class="containerul_pozei_de_profil">
+                <img src="poze/user_photo.PNG" alt="Avatar" class="avatar">
+            </div>
+
+            <div class="containerul">
+                <label for="username"><b>Nume de utilizator:</b></label>
+                <input class="login_input" type="text" placeholder="Introdu username-ul:" name="uname" required>
+                <br><br>
+                <label for="parola"><b>Parolă:</b></label>
+                <input class="login_input" type="password" placeholder="Introdu parola:" name="psw" required style="margin-left: 82px;">
+                <br><br><br>
+                <button class="button-logare" type="submit">Logare</button>
+                <!-- <input type="submit" class="button-logare" value="Logare"> -->
+                <label>
+                    <br>
+                    <input type="checkbox" name="remember"> Ține-mă minte
+                </label>
+            </div>
+
+            <div class="containerul">
+                <button type="button" class="buton_de_cancel">Anulează</button>
+                <span class="psw">Ai uitat <a href="forgot_password.html" style="color: red;">parola</a> ?</span>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

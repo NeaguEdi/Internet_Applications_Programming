@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-type" value="text/html" charset="UTF-8" />
+    <meta name="description" content="Papuci Abibas">
+    <meta name="author" content="co-authored by Neagu Eduard, Schiopu Cristian">
+    <title>Articole sportive</title>
+    <link rel="icon" type="image/x-icon" href="poze/icon.png">
+    <link rel="stylesheet" type="text/css" href="macheta.css" title="Foaie de stiluri">
+    <script type="text/javascript" src="slider.js"></script>
+    <script type="text/javascript" src="cosDeCumparaturi.js"></script>
+
+</head>
+
+<body>
+    <h1 id="Titlul_paginii">Racheta de tenis</h1>
+    <nav class="navigator">
+        <a class="item_navigator" href="index.html">Acasă</a>
+        <a class="item_navigator" href="articoleSportive.html">Articole sportive</a>
+        <div class="item_navigator has-dropdown">
+            <a class="menu-button">Îmbrăcăminte</a>
+            <div class="dropdown">
+                <div class="submenu">
+                    <a href="#">Bărbați</a>
+                    <div class="sub-dropdown">
+                        <a href="tricouriBarbati.html">Tricouri</a>
+                        <a href="pantaloniBarbati.html">Pantaloni</a>
+                        <a href="papuciBarbati.html">Papuci</a>
+                    </div>
+                </div>
+                <div class="submenu">
+                    <a href="#">Femei</a>
+                    <div class="sub-dropdown">
+                        <a href="tricouriFemei.html">Tricouri</a>
+                        <a href="pantaloniFemei.html">Pantaloni</a>
+                        <a href="papuciFemei.html">Papuci</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="item_navigator" href="inregistrare_user.html">Înregistrează-te</a>
+        <a class="item_navigator" href="login.html">Login</a>
+        <a class="item_navigator" href="contact.html">Contact</a>
+        <a class="item_navigator" href="cosDeCumparaturi.html">🛒Coș</a>
+    </nav>
+
+    <div style="text-align: center;">
+        <h2>Galerie de Imagini</h2>
+        <div class="gallery">
+            <img src="poze/rachetaDeTenis1.JPG" onclick="showBigImage(this)">
+            <img src="poze/rachetaDeTenis2.jpg" onclick="showBigImage(this)">
+            <img src="poze/rachetaDeTenis3.JPG" onclick="showBigImage(this)">
+            <img src="poze/rachetaDeTenis4.JPG" onclick="showBigImage(this)">
+        </div>
+
+        <div class="big-image-container">
+            <img id="bigImg" class="big-image" src="poze/rachetaDeTenis1.JPG">
+        </div>
+        <div class="control">
+        <button onclick="prev()">Înapoi</button>
+        <button onclick="slide()">Înainte</button>
+        </div>        
+        <h2>PRET: 44,99 LEI
+        </h2>
+        <section>
+            <h2>Descriere</h2>
+            <p class="description">Această rachetă de tenis este alegerea ideală pentru jucătorii de nivel mediu și avansat, care doresc un echilibru perfect între putere și control. Fabricată din materiale de ultimă generație, racheta este concepută pentru a asigura performanțe excelente pe teren. Fie că joci pe zgură, iarbă sau hard, această rachetă îți va oferi precizia necesară pentru a-ți îmbunătăți jocul.</p>
+        </section>
+        <br><button onclick="adaugaInCos('Racheta de tenis', 44.99)">Adaugă în coș</button><br>
+        
+        <section class="features">
+            <h2>Caracteristici principale:</h2>
+            <ul style="list-style-type: none">
+                <li><strong>Material:</strong> Carbon și grafit, pentru o rachetă ușoară și rezistentă, care asigură o mai bună transmisie a energiei.</li>
+                <li><strong>Greutate:</strong> 300 g (greutate medie), pentru un echilibru optim între putere și control.</li>
+                <li><strong>Dimensiune cap:</strong> 100 inchi pătrați (suprafață optimă pentru lovituri precise și o mare putere de joc).</li>
+                <li><strong>Balans:</strong> Balans ușor spre cap, ideal pentru un joc agresiv, cu mai multă putere în lovituri.</li>
+                <li><strong>Lungime:</strong> 685 mm (lungime standard pentru un control sporit și manevrabilitate excelentă).</li>
+                <li><strong>Grip:</strong> Grip ergonomic pentru un confort superior, reducând riscul de rănire și oboseală în timpul jocurilor lungi.</li>
+                <li><strong>Tehnologie:</strong> Amortizare vibrații pentru a reduce impactul asupra brațului și pentru a preveni accidentările.</li>
+            </ul>
+        </section>
+    </div>
+
+</body>
+
+</html>

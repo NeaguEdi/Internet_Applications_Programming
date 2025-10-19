@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-type" value="text/html" charset="UTF-8" />
+    <meta name="description" content="Papuci Abibas">
+    <meta name="author" content="co-authored by Neagu Eduard, Schiopu Cristian">
+    <title>Articole sportive</title>
+    <link rel="icon" type="image/x-icon" href="poze/icon.png">
+    <link rel="stylesheet" type="text/css" href="macheta.css" title="Foaie de stiluri">
+    <script type="text/javascript" src="slider.js"></script>
+    <script type="text/javascript" src="cosDeCumparaturi.js"></script>
+</head>
+
+<body>
+    <h1 id="Titlul_paginii">Papuci Sprandi</h1>
+    <nav class="navigator">
+        <a class="item_navigator" href="index.html">Acasă</a>
+        <a class="item_navigator" href="articoleSportive.html">Articole sportive</a>
+        <div class="item_navigator has-dropdown">
+            <a class="menu-button">Îmbrăcăminte</a>
+            <div class="dropdown">
+                <div class="submenu">
+                    <a href="#">Bărbați</a>
+                    <div class="sub-dropdown">
+                        <a href="tricouriBarbati.html">Tricouri</a>
+                        <a href="pantaloniBarbati.html">Pantaloni</a>
+                        <a href="papuciBarbati.html">Papuci</a>
+                    </div>
+                </div>
+                <div class="submenu">
+                    <a href="#">Femei</a>
+                    <div class="sub-dropdown">
+                        <a href="tricouriFemei.html">Tricouri</a>
+                        <a href="pantaloniFemei.html">Pantaloni</a>
+                        <a href="papuciFemei.html">Papuci</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="item_navigator" href="inregistrare_user.html">Înregistrează-te</a>
+        <a class="item_navigator" href="login.html">Login</a>
+        <a class="item_navigator" href="contact.html">Contact</a>
+        <a class="item_navigator" href="cosDeCumparaturi.html">🛒Coș</a>
+    </nav>
+
+    <div style="text-align: center;">
+        <h2>Galerie de Imagini</h2>
+        <div class="gallery">
+            <img src="poze/sneakersSprandi1.JPG"  onclick="showBigImage(this)">
+            <img src="poze/sneakersSprandi2.JPG" onclick="showBigImage(this)">
+            <img src="poze/sneakersSprandi3.JPG" onclick="showBigImage(this)">
+            <img src="poze/sneakersSprandi4.JPG" onclick="showBigImage(this)">
+            <img src="poze/sneakersSprandi5.JPG" onclick="showBigImage(this)">
+        </div>
+
+        <div class="big-image-container">
+            <img id="bigImg" class="big-image" src="poze/sneakersSprandi1.JPG">
+        </div>
+        <div class="control">
+        <button onclick="prev()">Înapoi</button>
+        <button onclick="slide()">Înainte</button>
+        </div>        
+
+        <h2>PRET: 109,99 LEI
+            <br>MARIME:<select name="marime papuci">
+                <option value="38">38</option>
+                <option value="39">39</option>
+                <option value="40">40</option>
+                <option value="41">42</option>
+                <option value="43">43</option>
+            </select>
+            <br><button onclick="adaugaInCos('Sneakers Sprandi', 109.99)">Adaugă în coș</button><br>
+        </h2>
+        <h1>Informații despre produs</h1>
+        <div>
+            <div>
+                <h2>Descriere</h2>
+                <p>Marca</b>:Sprandi </p>
+                <p>Numele produsului</b>: MP72-21782</p>
+            </div>
+            <div>
+                <h2>Material și întreținere </h2>
+                <p><b>Încălzire</b>:Fără căptușeală </p>
+                <p><b>Branț</b>:Fibră textilă </p>
+                <p><b>Interior</b>:Fibră textilă </p>
+                <p><b>Partea superioară</b>:Fibră textilă </p>
+                <p><b>Talpa</b>:Material de înaltă calitate </p>
+                <h2>Mărime și potrivire </h2>
+                <p><b>Grosimea tălpii</b>:3 cm </p>
+                <p><b>Greutatea pantofului</b>:320 g</p>
+                <h2>Design și stil </h2>
+                <p><b>Culoare</b>:Negru </p>
+                <p><b>Tipul de închidere</b>:Șireturi</p>
+                <p><b>Tipul vârfului</b>:Rotund </p>
+                <p><b>Tipul tocului</b>:Fără toc </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

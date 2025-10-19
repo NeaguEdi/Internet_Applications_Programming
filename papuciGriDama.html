@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-type" value="text/html" charset="UTF-8" />
+    <meta name="description" content="Papuci Abibas">
+    <meta name="author" content="co-authored by Neagu Eduard, Schiopu Cristian">
+    <title>Articole sportive</title>
+    <link rel="icon" type="image/x-icon" href="poze/icon.png">
+    <link rel="stylesheet" type="text/css" href="macheta.css" title="Foaie de stiluri">
+    <script type="text/javascript" src="slider.js"></script>
+    <script type="text/javascript" src="cosDeCumparaturi.js"></script>
+</head>
+
+<body>
+    <h1 id="Titlul_paginii">Papuci gri de damă</h1>
+    <nav class="navigator">
+        <a class="item_navigator" href="index.html">Acasă</a>
+        <a class="item_navigator" href="articoleSportive.html">Articole sportive</a>
+        <div class="item_navigator has-dropdown">
+            <a class="menu-button">Îmbrăcăminte</a>
+            <div class="dropdown">
+                <div class="submenu">
+                    <a href="#">Bărbați</a>
+                    <div class="sub-dropdown">
+                        <a href="tricouriBarbati.html">Tricouri</a>
+                        <a href="pantaloniBarbati.html">Pantaloni</a>
+                        <a href="papuciBarbati.html">Papuci</a>
+                    </div>
+                </div>
+                <div class="submenu">
+                    <a href="#">Femei</a>
+                    <div class="sub-dropdown">
+                        <a href="tricouriFemei.html">Tricouri</a>
+                        <a href="pantaloniFemei.html">Pantaloni</a>
+                        <a href="papuciFemei.html">Papuci</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="item_navigator" href="inregistrare_user.html">Înregistrează-te</a>
+        <a class="item_navigator" href="login.html">Login</a>
+        <a class="item_navigator" href="contact.html">Contact</a>
+        <a class="item_navigator" href="cosDeCumparaturi.html">🛒Coș</a>
+    </nav>
+
+    <div style="text-align: center;">
+        <h2>Galerie de Imagini</h2>
+        <div class="gallery">
+            <img src="poze/adidasiGriDama1.JPG" onclick="showBigImage(this)">
+            <img src="poze/adidasiGriDama2.JPG" onclick="showBigImage(this)">
+            <img src="poze/adidasiGriDama3.JPG" onclick="showBigImage(this)">
+            <img src="poze/adidasiGriDama4.JPG" onclick="showBigImage(this)">
+        </div>
+
+        <div class="big-image-container">
+            <img id="bigImg" class="big-image" src="poze/adidasiGriDama1.JPG">
+        </div>
+        <div class="control">
+        <button onclick="prev()">Înapoi</button>
+        <button onclick="slide()">Înainte</button>
+        </div>        
+
+        <h2>PRET: 64,99 LEI
+            <br>MARIME:<select name="marime papuci">
+                <option value="38">38</option>
+                <option value="39">39</option>
+                <option value="40">40</option>
+                <option value="41">41</option>
+                <option value="42">42</option>
+                <option value="43">43</option>
+            </select>
+            <br><button onclick="adaugaInCos('Papuci gri de dama', 64.99)">Adaugă în coș</button><br>
+        </h2>
+        <div>
+            <h2>Descriere</h2>
+            <p>Produs conceput pentru jogging.</p>
+            <p>Ideal pentru practicanții care aleargă până la 10 km pe săptămână.</p>
+            <p>Asigură greutate redusă și amortizare.</p>
+            <p>Încălțăminte ușoară ce asigură amortizare datorită spumei moale. De asemenea, oferă confort!</p>
+            <p>Culoare: Gri deschis</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

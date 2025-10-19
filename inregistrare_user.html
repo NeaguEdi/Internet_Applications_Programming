@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-type" value="text/html" charset="UTF-8" />
+    <meta name="description" content="Pagina de articole sportive" />
+    <meta name="author" content="co-authored by Neagu Eduard, Schiopu Cristian" />
+    <title>Articole sportive</title>
+    <link rel="icon" type="image/x-icon" href="icon.png" />
+    <link rel="stylesheet" type="text/css" href="macheta.css" title="Foaie de stiluri" />
+    <script type="text/javascript" src="functionalitati_inregistrare.js">
+    </script>
+</head>
+
+<body id="main_body">
+    <h1 id="Titlul_paginii">Înregistrează-te!</h1>
+    <nav class="navigator">
+        <a class="item_navigator" href="index.html">Acasă</a>
+        <a class="item_navigator" href="articoleSportive.html">Articole sportive</a>
+        <div class="item_navigator has-dropdown">
+            <a class="menu-button">Îmbrăcăminte</a>
+            <div class="dropdown">
+                <div class="submenu">
+                    <a href="#">Bărbați</a>
+                    <div class="sub-dropdown">
+                        <a href="tricouriBarbati.html">Tricouri</a>
+                        <a href="pantaloniBarbati.html">Pantaloni</a>
+                        <a href="papuciBarbati.html">Papuci</a>
+                    </div>
+                </div>
+                <div class="submenu">
+                    <a href="#">Femei</a>
+                    <div class="sub-dropdown">
+                        <a href="tricouriFemei.html">Tricouri</a>
+                        <a href="pantaloniFemei.html">Pantaloni</a>
+                        <a href="papuciFemei.html">Papuci</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="activ" href="inregistrare_user.html">Înregistrează-te</a>
+        <a class="item_navigator" href="login.html">Login</a>
+        <a class="item_navigator" href="contact.html">Contact</a>
+        <a class="item_navigator" href="cosDeCumparaturi.html">🛒Coș</a>
+    </nav>
+    
+    <form class="main_div" action="inreg_user.php" method="POST">
+        <h2>Înregistrare user
+            <span id="generalError" style="color:red; font-size:16px; position: relative; margin-left: 28%;" ></span>
+       </h2>
+
+        <fieldset style="background-color: orange; border: 1px dotted red">
+            <legend style="background-color: blue; color: white">
+                Informatii generale:
+            </legend>
+            Numele utilizatorului:<input name="user" class="input_inregistreaza" type="text" size="40" placeholder="Nume_utilizator" onblur="afisareInformatieCuAlert(this)"/><br /><br />
+            Parola:<input name="parola" class="input_inregistreaza" type="password" size="40" placeholder="Parola" onblur="afisareInformatieCuAlert(this)"/><br /><br />
+            Nume:<input name="nume" class="input_inregistreaza" type="text" size="40" onblur="afisareInformatieCuAlert(this)"/><br /><br />
+            Prenume:<input name="prenume" class="input_inregistreaza" type="text" size="40" onblur="afisareInformatieCuAlert(this)"/><br /><br />
+            Email:<input name="email" class="input_inregistreaza" type="email" size="40" placeholder="...@domeniu.com" onblur="afisareInformatieCuAlert(this)"/><br /><br />
+            Telefon:<input name="telefon" class="input_inregistreaza" type="tel" size="40" pattern="07[0-9]{2}[0-9]{3}[0-9]{3}" placeholder="07xx xxx xxx" onblur="afisareInformatieCuAlert(this)"/>
+        </fieldset>
+
+        <fieldset style="background-color: orange; border: 1px dashed green; margin-top:10px;">
+            <legend style="background-color: blue; color: white">
+                Informatii personale:
+            </legend>
+            Poza de profil:
+            <input type="file" name="pozaDeProfil" /><br /><br />
+            Genul:
+            <select name="genul"onblur="afisareInformatieCuAlert(this)">
+                <option value="Masculin">Masculin</option>
+                <option value="Feminin">Feminin</option>
+            </select><br /><br />
+            Copil:<br />
+            <input type="radio" value="Da" name="copil" onblur="afisareInformatieCuAlert(this)"/>Da<br />
+            <input type="radio" value="Nu" name="copil" onblur="afisareInformatieCuAlert(this)"/>Nu<br /><br />
+            <br />
+            Data nașterii:
+            <input type="date" id="birthday" name="data_nasterii">
+            <br><br>
+            <textarea name="textArea" rows="10" cols="20" placeholder="Descrie-te:" onblur="afisareInformatieCuAlert(this)"></textarea>
+            <br /><br />
+            <button class="inreg_button"  type="submit" >Înregistrare</button>
+        </fieldset>
+    </form>
+</body>
+
+
+<script>
+document.querySelector(".inreg_button").addEventListener("click", function () {
+    const inputs = document.querySelectorAll('.input_inregistreaza, select, input, textarea');
+    let hasEmpty = false;
+
+    inputs.forEach((input) => {
+        const errorSpan = input.nextElementSibling;
+
+        if (input.value.trim() === "") {
+            input.style.border = "1px solid red";
+            hasEmpty = true;
+        } else {
+            if (errorSpan) errorSpan.textContent = "";
+            input.style.border = "";
+        }
+    });
+
+    const generalError = document.getElementById("generalError");
+    if (hasEmpty) {
+        generalError.textContent = "Trebuie completate toate spațiile!";
+    } else {
+        generalError.textContent = "";
+        alert("Autentificat!");
+    }
+});
+
+document.querySelectorAll('.input_inregistreaza, select, file, input, textarea').forEach((input) => {
+    input.addEventListener("focus", function () {
+        const errorSpan = input.nextElementSibling;
+        if (errorSpan) errorSpan.textContent = "";
+        input.style.border = "";
+        document.getElementById("generalError").textContent = "";
+    });
+});
+
+</script>
+
+</html>

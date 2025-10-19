@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-type" value="text/html" charset="UTF-8" />
+    <meta name="description" content="Papuci Abibas">
+    <meta name="author" content="co-authored by Neagu Eduard, Schiopu Cristian">
+    <title>Articole sportive</title>
+    <link rel="icon" type="image/x-icon" href="poze/icon.png">
+    <link rel="stylesheet" type="text/css" href="macheta.css" title="Foaie de stiluri">
+    <script type="text/javascript" src="slider.js"></script>
+    <script type="text/javascript" src="cosDeCumparaturi.js"></script>
+</head>
+
+<body>
+    <h1 id="Titlul_paginii">Tricou rosu</h1>
+    <nav class="navigator">
+        <a class="item_navigator" href="index.html">Acasă</a>
+        <a class="item_navigator" href="articoleSportive.html">Articole sportive</a>
+        <div class="item_navigator has-dropdown">
+            <a class="menu-button">Îmbrăcăminte</a>
+            <div class="dropdown">
+                <div class="submenu">
+                    <a href="#">Bărbați</a>
+                    <div class="sub-dropdown">
+                        <a href="tricouriBarbati.html">Tricouri</a>
+                        <a href="pantaloniBarbati.html">Pantaloni</a>
+                        <a href="papuciBarbati.html">Papuci</a>
+                    </div>
+                </div>
+                <div class="submenu">
+                    <a href="#">Femei</a>
+                    <div class="sub-dropdown">
+                        <a href="tricouriFemei.html">Tricouri</a>
+                        <a href="pantaloniFemei.html">Pantaloni</a>
+                        <a href="papuciFemei.html">Papuci</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="item_navigator" href="inregistrare_user.html">Înregistrează-te</a>
+        <a class="item_navigator" href="login.html">Login</a>
+        <a class="item_navigator" href="contact.html">Contact</a>
+        <a class="item_navigator" href="cosDeCumparaturi.html">🛒Coș</a>
+    </nav>
+
+    <div style="text-align: center;">
+        <h2>Galerie de Imagini</h2>
+        <div class="gallery">
+            <img src="poze/tricouRosu1.JPG" onclick="showBigImage(this)">
+            <img src="poze/tricouRosu2.jpg" onclick="showBigImage(this)">
+        </div>
+
+        <div class="big-image-container">
+            <img id="bigImg" class="big-image" src="poze/tricouRosu1.JPG">
+        </div>
+        <div class="control">
+        <button onclick="prev()">Înapoi</button>
+        <button onclick="slide()">Înainte</button>
+        </div>        
+
+        <h3><s>PREȚ: 78 LEI</s>
+                64 LEI
+        </h3>
+        <label for="size">MĂRIME:</label>
+        <select id="size">
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+            <option>XL</option>
+        </select>
+        <br><button onclick="adaugaInCos('Tricou rosu', 64)">Adaugă în coș</button><br>
+
+        <h2>Detalii Produs</h2>
+        <p><strong>Cod produs:</strong> BV6708-657</p>
+        <p><strong>Sex:</strong> Barbati</p>
+        <p><strong>Producator:</strong> Nike</p>
+        <p><strong>Culoare:</strong> roșu</p>
+        <p><strong>Calități:</strong> Dri-FIT</p>
+        <p><strong>Sport:</strong> Fotbal</p>
+        <p><strong>Funcție:</strong> Funcționale</p>
+        <p><strong>Potrivire:</strong> Standard</p>
+        <p><strong>Material:</strong> 100% poliester</p>
+        <p><strong>Garanție:</strong> 2 ani</p>
+    </div>
+
+</body>
+
+</html>

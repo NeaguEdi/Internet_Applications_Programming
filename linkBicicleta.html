@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-type" value="text/html" charset="UTF-8" />
+        <meta name="description" content="Papuci Abibas">
+        <meta name="author" content="co-authored by Neagu Eduard, Schiopu Cristian">
+        <title>Articole sportive</title>
+        <link rel="icon" type="image/x-icon" href="poze/icon.png"  >
+        <link rel="stylesheet" type="text/css" href="macheta.css" title="Foaie de stiluri">
+        <script type="text/javascript" src="slider.js"></script>
+        <script type="text/javascript" src="cosDeCumparaturi.js"></script>
+    </head>
+    <body>
+        <h1 id="Titlul_paginii">Bicicleta MTB Terrana 2923</h1>
+    <nav class="navigator">
+        <a class="item_navigator" href="index.html">Acasă</a>
+        <a class="item_navigator" href="articoleSportive.html">Articole sportive</a>
+        <div class="item_navigator has-dropdown">
+            <a class="menu-button">Îmbrăcăminte</a>
+            <div class="dropdown">
+                <div class="submenu">
+                    <a href="#">Bărbați</a>
+                    <div class="sub-dropdown">
+                        <a href="tricouriBarbati.html">Tricouri</a>
+                        <a href="pantaloniBarbati.html">Pantaloni</a>
+                        <a href="papuciBarbati.html">Papuci</a>
+                    </div>
+                </div>
+                <div class="submenu">
+                    <a href="#">Femei</a>
+                    <div class="sub-dropdown">
+                        <a href="tricouriFemei.html">Tricouri</a>
+                        <a href="pantaloniFemei.html">Pantaloni</a>
+                        <a href="papuciFemei.html">Papuci</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="item_navigator" href="inregistrare_user.html">Înregistrează-te</a>
+        <a class="item_navigator" href="login.html">Login</a>
+        <a class="item_navigator" href="contact.html">Contact</a>
+        <a class="item_navigator" href="cosDeCumparaturi.html">🛒Coș</a>
+    </nav>
+
+        <div style="text-align: center;">
+        <h2>Galerie de Imagini</h2>
+        <div class="gallery">
+        <img src="poze/bicla1.jpg" onclick="showBigImage(this)">
+        <img src="poze/bicla2.jpg" onclick="showBigImage(this)">
+        <img src="poze/bicla3.jpg" onclick="showBigImage(this)">
+        <img src="poze/bicla4.jpg" onclick="showBigImage(this)">
+        </div>
+
+        <div class="big-image-container">
+        <img id="bigImg" class="big-image" src="poze/bicla1.jpg">
+        </div>
+        <div class="control">
+        <button onclick="prev()">Înapoi</button>
+        <button onclick="slide()">Înainte</button>
+        </div>
+
+        
+        <h2>PRET: 899,49 LEI
+            <br>MARIME:<select name="marime papuci">
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                </select>
+                <br><button onclick="adaugaInCos('Bicicletă', 899.49)">Adaugă în coș</button><br>
+        </h2>
+        <div class="container">
+            <h1>Bicicleta MTB Terrana 2923</h1>
+            <p><strong>Bicicleta Mtb Terrana 2923</strong> este o bicicletă <strong>all mountain</strong>, echipată pentru evadarea ta offroad.</p>
+            <p><strong>MTB Terrana 2923</strong> este un <strong>hardtail aluminiu</strong>, echipată <strong>Shimano</strong>, suspensie față, frână V-brake, <strong>3x7 viteze</strong>, roți de 29 inch echipate Kenda.</p>
+            <p>Descoperă gama noastră variată de biciclete MTB pe afisport.ro, ideale pentru aventurieri și pasionați de ciclism off-road.</p>
+            <p>Fie că ești în căutarea performanței pe trasee montane sau pur și simplu vrei să explorezi natura, bicicletele noastre MTB sunt proiectate pentru a oferi o experiență de neuitat, combinând durabilitatea, confortul și tehnologia de vârf.</p>
+            <p>Alege modelul potrivit pentru stilul tău și pregătește-te să cucerești orice teren!</p>
+        </div>
+        </div>
+    </body>
+    
+</html>

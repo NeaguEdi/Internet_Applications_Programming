@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-type" value="text/html" charset="UTF-8" />
+    <meta name="description" content="Papuci Abibas">
+    <meta name="author" content="co-authored by Neagu Eduard, Schiopu Cristian">
+    <title>Articole sportive</title>
+    <link rel="icon" type="image/x-icon" href="poze/icon.png">
+    <link rel="stylesheet" type="text/css" href="macheta.css" title="Foaie de stiluri">
+    <script type="text/javascript" src="slider.js"></script>
+    <script type="text/javascript" src="cosDeCumparaturi.js"></script>
+</head>
+
+<body>
+    <h1 id="Titlul_paginii">Papuci de Fotbal</h1>
+    <nav class="navigator">
+        <a class="item_navigator" href="index.html">Acasă</a>
+        <a class="item_navigator" href="articoleSportive.html">Articole sportive</a>
+        <div class="item_navigator has-dropdown">
+            <a class="menu-button">Îmbrăcăminte</a>
+            <div class="dropdown">
+                <div class="submenu">
+                    <a href="#">Bărbați</a>
+                    <div class="sub-dropdown">
+                        <a href="tricouriBarbati.html">Tricouri</a>
+                        <a href="pantaloniBarbati.html">Pantaloni</a>
+                        <a href="papuciBarbati.html">Papuci</a>
+                    </div>
+                </div>
+                <div class="submenu">
+                    <a href="#">Femei</a>
+                    <div class="sub-dropdown">
+                        <a href="tricouriFemei.html">Tricouri</a>
+                        <a href="pantaloniFemei.html">Pantaloni</a>
+                        <a href="papuciFemei.html">Papuci</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="item_navigator" href="inregistrare_user.html">Înregistrează-te</a>
+        <a class="item_navigator" href="login.html">Login</a>
+        <a class="item_navigator" href="contact.html">Contact</a>
+        <a class="item_navigator" href="cosDeCumparaturi.html">🛒Coș</a>
+    </nav>
+
+    <div style="text-align: center;">
+        <h2>Galerie de Imagini</h2>
+        <div class="gallery">
+            <img src="poze/papucifotbal.jpg"  onclick="showBigImage(this)">
+            <img src="poze/papucifotbal2.jpg" onclick="showBigImage(this)">
+            <img src="poze/papucifotbal3.jpg" onclick="showBigImage(this)">
+            <img src="poze/papucifotbal4.jpg" onclick="showBigImage(this)">
+        </div>
+
+        <div class="big-image-container">
+            <img id="bigImg" class="big-image" src="poze/papucifotbal.jpg">
+        </div>
+        <div class="control">
+        <button onclick="prev()">Înapoi</button>
+        <button onclick="slide()">Înainte</button>
+        </div>        
+
+        <h2>PRET: 44,99 LEI
+            <br>MARIME:<select name="marime papuci">
+                <option value="38">38</option>
+                <option value="39">39</option>
+                <option value="40">40</option>
+                <option value="41">42</option>
+                <option value="43">43</option>
+            </select>
+            <br><button onclick="adaugaInCos('Papuci de fotbal', 44.99)">Adaugă în coș</button><br>
+        </h2>
+        <h1>Informații despre ghete de fotbal</h1>
+        <div>
+            <div>
+                <h2>Descriere</h2>
+                <p>Crește-ți jocul cu ghetele de fotbal Nike Mercurial Superfly 9 Pro Turf. Partea superioară mulată,
+                    sintetică, are un model texturat, permițând un control mai bun al mingii în timp ce driblează la
+                    viteze
+                    mari. Materialul Flyknit înfășoară glezna într-o țesătură moale și elastică, oferind o senzație de
+                    siguranță și prevenind orice distragere a atenției pe teren.</p>
+                <p>O potrivire reproiectată, zona degetelor conturată și blocarea îmbunătățită a călcâiului oferă
+                    confort
+                    maxim și o simulare mai naturală a piciorului. În interiorul structurii, cușca de viteză, realizată
+                    dintr-un material subțire, dar puternic, îți menține piciorul în siguranță, fără a adăuga greutate
+                    inutilă.</p>
+            </div>
+            <div>
+                <h2>Detalii tehnice</h2>
+                <p><strong>Tip talpă/sol:</strong> Gazon sintetic</p>
+                <p><strong>Șosetă pentru încălțăminte de fotbal:</strong> Da</p>
+                <p><strong>Model:</strong> Nike Mercurial Superfly</p>
+                <p><strong>Colecție:</strong> Nike Mercurial</p>
+                <p><strong>Clasa:</strong> P4 - CLUB</p>
+                <p><strong>Material superior:</strong> Sintetic</p>
+                <p><strong>Elemente de închidere:</strong> Șireturi</p>
+                <p><strong>Gama/Colecție:</strong> Nike Black Pack</p>
+                <p><strong>Stil:</strong> Ghete de fotbal gazon sintetic</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
